@@ -1,0 +1,19 @@
+<head>
+    <title>Document</title>
+</head>
+<!-- onload ใน javascript ไม่สามารถใช้งานกับ 
+    Element ย่อยๆ ได้ จึงนำมาใส่ใน <body> -->
+<body onload = 'alert("Hello Oil")'>
+    <h1>การจัดการ Event ที่เกิดขึ้น</h1>
+    <h2 id="result"></h2>
+    <!-- Event-driven Programming 
+     การเขียนโปรแกรมที่มี เหตุการณ์นำแล้วเกิด ผลลัพธ์ตามมา 
+    -->
+    <!-- onclick เกิดขึ้นเมื่อเอาเม้าส์ไปคลิกสิ่งที่อยู่ใน element -->
+    <p onclick='alert("Welcome !!!")'>Click here</p>
+    <button onclick='alert("Welcome !!!")'>Click here</button>
+    <!-- ใส่ชื่อฟังก์ชันใน element -->
+    <button onclick='sayHello()'>Say</button>
+
+    <script src="./event.js"></script>
+</body>
